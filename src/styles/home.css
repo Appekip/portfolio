@@ -1,0 +1,213 @@
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 81%, rgba(0,212,255,1) 93%);
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: aliceblue;
+    width: 60vw; 
+    border-radius: 20px; 
+}
+
+
+#aboutCard{
+    background-color: darkslategrey;
+    width: 60vw; 
+    height: 60vh;
+    border-radius: 20px; 
+    padding: 10px; 
+    color: aliceblue;
+}
+
+#projectBackground{
+    background-color: darkslategrey;
+    width: 60vw; 
+    height: auto; 
+    border-radius: 20px; 
+    padding: 10px; 
+    color: aliceblue;
+}
+
+#projectCard{
+    background-color: dimgray;
+    width: auto; 
+    height: 20vw;  
+    border-radius: 20px; 
+    padding: 10px; 
+    color: aliceblue;
+    margin-bottom: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#projectLeft{
+    width: 30vw; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgDiv{
+    transition: transform .2s;
+}
+#imgDiv:hover{
+    transform: scale(1.5);
+}
+
+#projectMid{
+    width: 10vw; 
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectLeft img{
+    max-width: 10vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#projectRight{
+    width: 25vw; 
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textContent {
+    text-align: center; 
+    width: 100%;
+  }
+  #textContent h3 {
+    font-size: 3vw;
+  }
+
+img {
+    max-width: auto;
+    height: 100%;
+    display: block;
+    border-radius: 20px; 
+  }
+
+#aboutMe{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    padding: 10px;
+    color: aliceblue;
+}
+
+#navi {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    color: white; 
+  }
+  
+  #navi a {
+    text-decoration: none; 
+    color: white; 
+  }
+  
+  #navi a:hover {
+    transition: transform .2s;
+  }
+  
+  #logo {
+    color: aliceblue;
+    font-size: 20px; 
+    transition: transform .2s;
+    margin: 0 15px;
+  }
+
+  #logo:hover{
+    transform: scale(1.5);
+  }
+
+  #header {
+    color: aliceblue;
+    font-size: 20px; 
+    transition: transform .2s;
+    margin: 0 15px;
+}
+
+#header:hover{
+    transform: scale(1.5);
+}
+
+  
+  @media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column; 
+        align-items: center;  
+        display: flex;
+        width: 100vw;
+    }
+
+    nav h2 {
+        font-size: 4vw; /* Skaalaa fonttikokoa suhteessa näytön leveyteen */
+    }
+    #header {
+        display: none;
+    }   
+
+    #navi{
+        flex-direction: column; 
+        align-items: center; 
+        color: white; 
+    }
+
+    #aboutCard{
+        background-color: darkslategrey;
+        width: 80vw; 
+        height: 60vh;
+        border-radius: 20px; 
+        padding: 10px; 
+        color: aliceblue;
+    }
+    
+    #projectBackground{
+        background-color: darkslategrey;
+        width: 80vw; 
+        height: auto; 
+        border-radius: 20px; 
+        padding: 10px; 
+        color: aliceblue;
+    }
+    
+    #projectCard{
+        background-color: dimgray;
+        width: auto; 
+        height: 20vw;  
+        border-radius: 20px; 
+        padding: 10px; 
+        color: aliceblue;
+        margin-bottom: 1vw;
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+}
